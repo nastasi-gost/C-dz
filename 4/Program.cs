@@ -3,15 +3,14 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 
-int FindResult (int A, int B)
+/*int FindResult (int A, int B)
 {
-    int count = 0;
+    int num = A;
+    for (int i = 1; i < B; i++)
         {
-            while (count <= B)
-            m = A * A;
-            count++;
+            num = num * A;
         }
-    return m;
+    return num;
 }
 
 Console.WriteLine ("Input number A");
@@ -19,7 +18,7 @@ int A = Convert.ToInt32 (Console.ReadLine());
 Console.WriteLine ("Input number B");
 int B = Convert.ToInt32 (Console.ReadLine());
 int result = FindResult (A, B);
-Console.WriteLine (result);
+Console.WriteLine ($"Число {A} в степени {B} -> {result}");*/
 
 //Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 //452 -> 11
@@ -28,17 +27,21 @@ Console.WriteLine (result);
 
 /*int FindSum (int a)
 {
-    sum = 0;
+    int sum = 0;
     {
-        while (a > 10)
-        sum = sum + (a / 10);
+        while (a > 0)
+            {
+                sum = sum + (a % 10);
+                a = a / 10;
+            }
     }
     return sum;
 }
+
 Console.WriteLine ("Input number");
 int number = Convert.ToInt32 (Console.ReadLine());
 int result = FindSum (number);
-Console.WriteLine (result);*/
+Console.WriteLine ($"{number} -> {result}");*/
 
 //Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 //1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
