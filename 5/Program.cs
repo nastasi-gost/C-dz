@@ -30,7 +30,7 @@ void HowManyEvenNumbers (int[] array)
         if (array[i] % 2 == 0)
         count++;
     }
-    Console.Write($"-> {count}");
+    Console.Write($"Количество чётных чисел -> {count}");
 }
 
 Console.WriteLine("Введите размер массива");
@@ -71,15 +71,14 @@ void ShowArray (int[] array)
  void FindSum (int[] array)
 {
     int sum = 0;
-    for (i = 0; i < array.Length; i++)
+    for (int i = 1; i < array.Length; i+=2)
     {
-        if (array[i] % 2 == 1)
         sum = sum + array[i];
     }
-    Console.Write(sum);
+    Console.Write ($"Сумма элементов на нечётных позициях равна -> {sum}");
 }
 
-Console.WriteLine("Введите размер массива");
+Console.WriteLine ("Введите размер массива");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите минимум");
 int min = Convert.ToInt32(Console.ReadLine());
@@ -93,29 +92,50 @@ FindSum (myArray);*/
 //Найдите разницу между максимальным и минимальным элементов массива.
 //[3 7 22 2 78] -> 76
 
-float[] CreateRandomArray (double size)
+/*int[] CreateRandomArray (int size)
 {
-   int[] newArray  = new int [size];
+   int [] newArray  = new int [size];
    for (int i = 0; i < size; i++)
    {
-    newArray[i] = new Random().Next();
+    newArray[i] = new Random().Next(1, 100);
    }
    return newArray;
 }
-/*
-void ShowArray (float[] array)
-{
+
+void ShowArray (int[] array)
+ {
     Console.Write ("Получившийся массив -> ");
-    for (float i=0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        Console.Write (array[i] + " ");
+        Console.Write(array[i] + " ");
     }
         Console.WriteLine();
- }*/
+ }
 
-/* Console.WriteLine("Введите размер массива");
-float a = Convert.ToInt32(Console.ReadLine());
-double[] myArray = CreateRandomArray (a);*/
-//ShowArray(myArray);
+void FindMin (int[] array)
+{   
+    int min = array[0];
+    int max = array[0];
+    for (int i = 0; i < array.Length; i++)
+    {
+        {
+            if (array[i] < min)
+            min = array[i];
+            if (array[i] > max)
+            max = array[i];
+        }
+        Console.WriteLine($"Максимальное значение -> {max}, минимальное значение -> {min}");
+    }
+    Console.WriteLine($"Разница между максимумом и минимумом равна {max - min}");
+}
 
-float[] B = new float [50]
+
+Console.WriteLine("Введите размер массива");
+int a = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreateRandomArray (a);
+ShowArray (myArray);
+FindMin (myArray);*/
+
+//Сделать массив из вещественных чисел так и не получилось((
+//Буду рада, если посоветуете, что почитать на эту тему.
+//Также не удалось избавиться от лишней строки "Максимальное значение -> 65, минимальное значение -> 65".
