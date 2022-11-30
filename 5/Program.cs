@@ -92,17 +92,17 @@ FindSum (myArray);*/
 //Найдите разницу между максимальным и минимальным элементов массива.
 //[3 7 22 2 78] -> 76
 
-/*int[] CreateRandomArray (int size)
+/*double[] CreateRandomArray (int size)
 {
-   int [] newArray  = new int [size];
+   double[] newArray  = new double [size];
    for (int i = 0; i < size; i++)
    {
-    newArray[i] = new Random().Next(1, 100);
+    newArray[i] = new Random().Next();
    }
    return newArray;
 }
 
-void ShowArray (int[] array)
+void ShowArray (double[] array)
  {
     Console.Write ("Получившийся массив -> ");
     for (int i = 0; i < array.Length; i++)
@@ -112,10 +112,10 @@ void ShowArray (int[] array)
         Console.WriteLine();
  }
 
-void FindMin (int[] array)
+void FindMin (double[] array)
 {   
-    int min = array[0];
-    int max = array[0];
+    double min = array[0];
+    double max = array[0];
     for (int i = 0; i < array.Length; i++)
     {
         {
@@ -124,18 +124,14 @@ void FindMin (int[] array)
             if (array[i] > max)
             max = array[i];
         }
-        Console.WriteLine($"Максимальное значение -> {max}, минимальное значение -> {min}");
     }
+    Console.WriteLine($"Максимальное значение -> {max}, минимальное значение -> {min}");
     Console.WriteLine($"Разница между максимумом и минимумом равна {max - min}");
 }
 
 
 Console.WriteLine("Введите размер массива");
 int a = Convert.ToInt32(Console.ReadLine());
-int[] myArray = CreateRandomArray (a);
+double[] myArray = CreateRandomArray (a);
 ShowArray (myArray);
 FindMin (myArray);*/
-
-//Сделать массив из вещественных чисел так и не получилось((
-//Буду рада, если посоветуете, что почитать на эту тему.
-//Также не удалось избавиться от лишней строки "Максимальное значение -> 65, минимальное значение -> 65".
