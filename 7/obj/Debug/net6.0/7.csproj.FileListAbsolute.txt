@@ -1,0 +1,15 @@
+C:\Users\Анастасия\Desktop\C#\dz\7\bin\Debug\net6.0\7.exe
+C:\Users\Анастасия\Desktop\C#\dz\7\bin\Debug\net6.0\7.deps.json
+C:\Users\Анастасия\Desktop\C#\dz\7\bin\Debug\net6.0\7.runtimeconfig.json
+C:\Users\Анастасия\Desktop\C#\dz\7\bin\Debug\net6.0\7.dll
+C:\Users\Анастасия\Desktop\C#\dz\7\bin\Debug\net6.0\7.pdb
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.csproj.AssemblyReference.cache
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.AssemblyInfoInputs.cache
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.AssemblyInfo.cs
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.csproj.CoreCompileInputs.cache
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.dll
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\refint\7.dll
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.pdb
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\7.genruntimeconfig.cache
+C:\Users\Анастасия\Desktop\C#\dz\7\obj\Debug\net6.0\ref\7.dll
